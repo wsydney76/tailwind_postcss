@@ -12,8 +12,8 @@
     "tailwindcss": "^2.0.1"
   },
   "scripts": {
-    "dev": "postcss src/styles/style.css --output web/assets/dist/main.css",
-    "watch": "postcss src/styles/style.css --output web/assets/dist/main.css --watch --verbose",
-    "build": "postcss src/styles/style.css --output web/assets/dist/main.css --env production"
+    "dev": "postcss src/styles/main.css --output web/assets/styles/main.css",
+    "watch": "postcss src/styles/main.css --output web/assets/styles/main.css --watch --verbose",
+    "build": "postcss src/styles/main.css --output web/assets/styles/main.css --env production"
   }
 }
