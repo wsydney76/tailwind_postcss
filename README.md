@@ -3,6 +3,13 @@
 Simple setup for using Tailwind CSS in your project in case you don't want to
 use a complex WebPack, Grunt, Gulp whatsoever build process.
 
+## Quick Start
+
+* Copy files from the `setup` folder to the root folder of your Craft CMS project.
+* Run `npm install`
+* Run `npm run dev`
+* Add `<link href="/assets/styles/main.css" rel="stylesheet">` to your templates.
+
 ## Modules
 
 __tailwindcss__
@@ -80,6 +87,7 @@ cd into the folder containing `package.json`.
 * Run `npm install`.
 * Take a break and pray.
 
+
 ##  Build
 
 cd into the folder containing `package.json`.
@@ -93,3 +101,8 @@ remove the environment checks in `postcss.config.js` if you don't want this.
 * Run `npm run build` for a production build.  
 This will set the environment variable `NODE_ENV=production` so all configured PostCSS plugins will run,
  and Tailwind CSS wil purge all unused classes.
+
+* Add a link to your css file to your templates. 
+If you didn't change the file paths it will be `<link href="/assets/styles/main.css" rel="stylesheet">`   
+This setup does not have a method for cache busting the css file, so may want to add a version
+paramter to the link, e.g. `/assets/styles/main.css?v=202011231422`
